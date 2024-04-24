@@ -7,11 +7,11 @@ public class Pentagon extends Polygon{
   }
 
   private double area(){
-    return 0.25*Math.sqrt(5*(5+2*Math.sqrt(5)))*sideLength*sideLength;
+    return 0.25*Math.sqrt(5*(5+2*Math.sqrt(5)))*getSideLength()*getSideLength();
   }
   
   private double perimeter(){
-    return sideLength*(double)5;
+    return getSideLength()*(double)5;
   }
 
   public void results(){

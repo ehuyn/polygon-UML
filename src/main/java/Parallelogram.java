@@ -1,5 +1,5 @@
 public class Parallelogram extends Polygon{
-  protected double height;
+  private double height;
   
   public Parallelogram(double aBase, double aHeight){
     // sideLength attribute of the polygon class represents the base of the parallelogram.
@@ -16,11 +16,11 @@ public class Parallelogram extends Polygon{
   }
   
   protected double area(){
-    return sideLength*height;
+    return getSideLength()*height;
   }
   
   protected double perimeter(){
-    return 2*sideLength + 2*height;
+    return 2*getSideLength() + 2*height;
   }
 
   public void results(){

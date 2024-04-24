@@ -7,11 +7,11 @@ public class Hexagon extends Polygon{
   }
 
   private double area(){
-    return 3*Math.sqrt(3)/2*sideLength*sideLength;
+    return 3*Math.sqrt(3)/2*getSideLength()*getSideLength();
   }
   
   private double perimeter(){
-    return sideLength*(double)6;
+    return getSideLength()*(double)6;
   }
 
   public void results(){
