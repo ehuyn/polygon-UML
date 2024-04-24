@@ -1,0 +1,29 @@
+public class Parallelogram extends Polygon{
+  protected double height;
+  
+  public Parallelogram(double aBase, double aHeight){
+    super(aBase);
+    height = aHeight;
+  }
+
+  public double getHeight(){
+    return height;
+  }
+
+  public void setHeight(double newHeight){
+    height = newHeight;
+  }
+  
+  protected double area(){
+    return sideLength*height;
+  }
+  
+  protected double perimeter(){
+    return 2*sideLength + 2*height;
+  }
+
+  public void results(){
+    System.out.println("The base of the parallelogram is " + getSideLength() + " and the height is " + getHeight() + ".");
+    System.out.format("The area for this parallelogram is %.2f and the perimeter is %.2f.\n\n", area(), perimeter());
+  }
+}
