@@ -1,5 +1,6 @@
 public class Polygon{
 
+  // General side length of a polygon.
   protected double sideLength;
 
   public Polygon(double aLength){

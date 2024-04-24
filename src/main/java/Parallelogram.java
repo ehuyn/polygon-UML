@@ -2,6 +2,7 @@ public class Parallelogram extends Polygon{
   protected double height;
   
   public Parallelogram(double aBase, double aHeight){
+    // sideLength attribute of the polygon class represents the base of the parallelogram.
     super(aBase);
     height = aHeight;
   }

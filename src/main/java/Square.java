@@ -2,15 +2,11 @@ public class Square extends Rectangle{
   
   public Square(double aSide){
     super(aSide, aSide);
-    sideLength = aSide;
   }
 
-  protected double area(){
-    return sideLength * sideLength;
-  }
-
-  protected double perimeter(){
-    return 4*sideLength;
+  public void setSideLength(double newSideLength){
+    super.setSideLength(newSideLength);
+    super.setHeight(newSideLength);
   }
 
   public void results(){

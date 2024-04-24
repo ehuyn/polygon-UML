@@ -7,25 +7,25 @@ public class Main {
     System.out.println("---PENTAGON---");
     System.out.print("Side length: ");
     double sideLength = in.nextDouble();
-    Pentagon pent = new Pentagon(sideLength);
-    pent.results();
+    Pentagon pentagon = new Pentagon(sideLength);
+    pentagon.results();
 
     System.out.print("New side length: ");
     sideLength = in.nextDouble();
-    pent.setSideLength(sideLength);
-    pent.results();
+    pentagon.setSideLength(sideLength);
+    pentagon.results();
 
     // Hexagon
     System.out.println("---HEXAGON---");
     System.out.print("Side length: ");
     sideLength = in.nextDouble();
-    Hexagon hex = new Hexagon(sideLength);
-    hex.results();
+    Hexagon hexagon = new Hexagon(sideLength);
+    hexagon.results();
 
     System.out.print("New side length: ");
     sideLength = in.nextDouble();
-    hex.setSideLength(sideLength);
-    hex.results();
+    hexagon.setSideLength(sideLength);
+    hexagon.results();
     
     // Parallelogram
     System.out.println("---PARALLELOGRAM---");
@@ -33,16 +33,16 @@ public class Main {
     sideLength = in.nextDouble();
     System.out.print("Height: ");
     double height = in.nextDouble();
-    Parallelogram par = new Parallelogram(sideLength, height);
-    par.results();
+    Parallelogram parallelogram = new Parallelogram(sideLength, height);
+    parallelogram.results();
 
     System.out.print("New base: ");
     sideLength = in.nextDouble();
-    par.setSideLength(sideLength);
+    parallelogram.setSideLength(sideLength);
     System.out.print("New height: ");
     height = in.nextDouble();
-    par.setHeight(height);
-    par.results();
+    parallelogram.setHeight(height);
+    parallelogram.results();
     
     // Rectangle
     System.out.println("---RECTANGLE---");
@@ -50,27 +50,27 @@ public class Main {
     sideLength = in.nextDouble();
     System.out.print("Height: ");
     height = in.nextDouble();
-    Rectangle rect = new Rectangle(sideLength, height);
-    rect.results();
+    Rectangle rectangle = new Rectangle(sideLength, height);
+    rectangle.results();
 
     System.out.print("New base: ");
     sideLength = in.nextDouble();
-    rect.setSideLength(sideLength);
+    rectangle.setSideLength(sideLength);
     System.out.print("New height: ");
     height = in.nextDouble();
-    rect.setHeight(height);
-    rect.results();
-    
+    rectangle.setHeight(height);
+    rectangle.results();
+   
     // Square
     System.out.println("---SQUARE---");
     System.out.print("Side length: ");
     sideLength = in.nextDouble();
-    Square sqr = new Square(sideLength);
-    sqr.results();
+    Square square = new Square(sideLength);
+    square.results();
 
     System.out.print("New side length: ");
     sideLength = in.nextDouble();
-    sqr.setSideLength(sideLength);
-    sqr.results();
+    square.setSideLength(sideLength);
+    square.results();
   }
 }
